@@ -1,4 +1,4 @@
-# Báo cáo Day 5 — điền trực tiếp trong fork của bạn
+# Báo cáo Day 5
 
 
 - Mã học viên theo lớp: 2A202602182
