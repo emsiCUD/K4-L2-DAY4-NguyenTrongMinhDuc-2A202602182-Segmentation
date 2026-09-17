@@ -47,7 +47,7 @@ Chọn một lỗi **có thật** trong bài. Nếu công cụ lỗi khiến b�
 - Quy tắc và hành động sửa: chỉnh lại biên mask sát thân xe theo phần nhìn thấy (dùng Eraser/Brush sửa vùng tràn), vẽ thêm object còn thiếu.
 - Sau sửa đã Save và export lại chưa? Đã Save, export lại và up bản `hard_panoptic.zip` hiện tại (bản đã kiểm OK, scorecard 30/30, PQ 0.982) — tức bản đang nộp đã là bản sau khi sửa.
 
-Kết quả tự đánh giá đã chạy qua `scoring/score.py` + `scorecard.py` với gold do coach cung cấp (`tiers_gt.zip`), scorecard ba tier: **79.9 / 82** (easy_semantic 17.9/20, medium_instance 32.0/32, hard_panoptic 30.0/30). Chi tiết: easy_semantic yếu nhất ở `building` (IoU 0.652) và `sidewalk` (IoU 0.687); hard_panoptic có PQ thấp nhất ở `car` (0.865, 8 FP) kèm cờ REVIEW_HIGH_AGREEMENT (metric 0.982 ≥ 0.95, chỉ là tín hiệu cần coach xem lại, không phải kết luận gian lận). Không tự ghi PASS/top 3/bonus; người phụ trách xác nhận theo tiêu chí lớp. Không đưa file ground truth (`tiers_gt.zip`, thư mục `groundtruth/`) vào fork — đã kiểm `.gitignore` chặn cả hai.
+Kết quả tự đánh giá đã chạy qua `scoring/score.py` + `scorecard.py` với gold do coach cung cấp (`tiers_gt.zip`), scorecard ba tier: **79.9 / 82** (easy_semantic 17.9/20, medium_instance 32.0/32, hard_panoptic 30.0/30). Chi tiết: easy_semantic yếu nhất ở `building` (IoU 0.652) và `sidewalk` (IoU 0.687); hard_panoptic có PQ thấp nhất ở `car` (0.865, 8 FP) kèm cờ REVIEW_HIGH_AGREEMENT (metric 0.982 ≥ 0.95, chỉ là tín hiệu cần coach xem lại, không phải kết luận gian lận). Không tự ghi PASS/top 3/bonus; người phụ trách xác nhận theo tiêu chí lớp.
 
 ## 4. Ba ca chưa chắc hoặc đã cân nhắc
 
